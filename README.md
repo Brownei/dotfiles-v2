@@ -1,9 +1,28 @@
-**This repo is supposed to be used as config by NvChad users!**
+# 🛠️ Brownei's Dotfiles
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+Welcome to my personal **dotfiles** repo — a curated collection of configurations that power my development environment on Linux.
 
-# Credits
+These dotfiles are designed to be clean, portable, and developer-focused. Whether you're setting up a new machine or just looking to borrow some setup tricks, feel free to explore, fork, or contribute!
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+---
+
+## 📦 Contents
+
+- **Neovim** (with [NvChad](https://github.com/NvChad/NvChad))
+- **Terminal & Shell**
+  - `bash` configs
+  - `tmux` setup
+- **Git** config & aliases
+- **Global `.editorconfig`**
+- CLI tools: `ripgrep`, `fzf`, `bat`, etc.
+
+---
+
+## 🚀 Getting Started
+
+### 🧱 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/dotfiles.git ~/.config/nvim
+cd ~/.config/nvim/
+nvim

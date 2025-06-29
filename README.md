@@ -1,4 +1,4 @@
-# 🛠️ Brownei's Dotfiles
+# 🛠️ Dotfiles
 
 Welcome to my personal **dotfiles** repo — a curated collection of configurations that power my development environment on Linux.
 
@@ -15,6 +15,10 @@ These dotfiles are designed to be clean, portable, and developer-focused. Whethe
 - **Git** config & aliases
 - **Global `.editorconfig`**
 - CLI tools: `ripgrep`, `fzf`, `bat`, etc.
+
+## Downloads you should do to have most these lsp work
+ npm i -g vscode-langservers-extracted
+ npm install -g @tailwindcss/language-server
 
 ---
 

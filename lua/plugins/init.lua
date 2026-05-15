@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -17,9 +17,9 @@ return {
   { import = "nvchad.blink.lazyspec" },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
         "vim",
         "c",
         "c_sharp",
@@ -50,9 +50,9 @@ return {
         "scss",
         "yaml",
         "c_sharp",
-        "razor"
+        "razor",
       },
-  	},
+    },
   },
 
   {
@@ -64,6 +64,35 @@ return {
       vim.g.mkdp_browser = "firefox" -- default browser or set e.g., "firefox"
     end,
     ft = { "markdown" },
+  },
+
+  {
+    "nvim-neotest/neotest",
+    keys = {
+      {
+        "<leader>ta",
+        function()
+          require("neotest").playwright.attachment()
+        end,
+        desc = "Launch test attachment",
+      },
+    },
+    dependencies = {
+      "thenbe/neotest-playwright",
+      dependencies = "nvim-telescope/telescope.nvim",
+    },
+    config = function()
+      require("neotest").setup {
+        adapters = {
+          require("neotest-playwright").adapter {
+            options = {
+              persist_project_selection = true,
+              enable_dynamic_test_discovery = true,
+            },
+          },
+        },
+      }
+    end,
   },
 
   {

@@ -9,7 +9,7 @@ local options = {
     rust = { "rust-analyzer" },
     go = { "goimports", "gopls" },
     cs = { "csharpier" },
-    yaml = { "yamllint" },
+    yaml = { "prettierd" },
   },
 
   format_on_save = {
